@@ -6,7 +6,7 @@ import (
 	"net/url"
 )
 
-const baseUrl = "https://api.slack.com/api/"
+const baseUrl = "https://Api.slack.com/Api/"
 
 type Api struct {
 	authToken string
@@ -46,7 +46,7 @@ func New(authToken string, client *http.Client) *Api {
 }
 
 func (e *ApiError) Error() string {
-	return "API Error: " + e.msg
+	return "API ApiError: " + e.msg
 }
 
 func isHttpError(r *http.Response) bool {

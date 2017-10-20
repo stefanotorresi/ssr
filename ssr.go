@@ -21,7 +21,7 @@ func init() {
 
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading environment: " + err.Error())
+		log.Fatal("ApiError loading environment: " + err.Error())
 	}
 }
 
